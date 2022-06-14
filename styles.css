@@ -1,0 +1,177 @@
+.title-wrap {
+    overflow: hidden;
+    margin: 0 0 60px;
+    text-align: center;
+}
+
+.title-text {
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 0;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.btn-custom {
+    background-color: #fff;
+    color: #000;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    display: inline-block;
+    position: relative;
+    -moz-transform: perspective(1px) translateZ(0px);
+    -webkit-transform: perspective(1px) translateZ(0px);
+    -o-transform: perspective(1px) translateZ(0px);
+    -ms-transform: perspective(1px) translateZ(0px);
+    transform: perspective(1px) translateZ(0px);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    vertical-align: middle;
+}
+
+.btn-custom::before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active {
+    border-color: #3e3e3e;
+    color: #fff;
+}
+
+.btn-custom:hover::before, .btn-custom:focus::before, .btn-custom:active::before {
+    -moz-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.pricing {
+    padding: 150px 0 100px;
+    background-color: #fff;
+}
+
+.pricing .pricing-wrap {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 1px rgba(138, 138, 138, 0.8);
+    margin: 0 0 40px;
+    min-height: 425px;
+    overflow: hidden;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.pricing .pricing-wrap:hover {
+    background-color: #61193f;
+    box-shadow: 0 0 5px 1px #833b61;
+    color: #fff;
+}
+
+.pricing .pricing-wrap:hover a.btn {
+    border-color: #fff;
+}
+
+.pricing .pricing-wrap h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 50px;
+    text-transform: uppercase;
+}
+
+.pricing .pricing-wrap a.btn {
+    border-color: #3e3e3e;
+    margin: 30px 0 0;
+    text-transform: capitalize;
+}
+
+.pricing .price-wrap {
+    text-align: left;
+}
+
+.pricing .price-wrap p {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.pricing .price-wrap sup {
+    font-size: 60%;
+    top: -0.75em;
+}
+
+.pricing .pricing-wrap p sub {
+    bottom: 0;
+    font-size: 15px;
+}
+
+.pricing .active .pricing-wrap .btn.btn-custom {
+    background-color: #ffb700;
+    border-color: #fff;
+}
+
+.pricing .pricing-wrap a.btn:hover, .pricing .active .pricing-wrap .btn.btn-custom:hover {
+    border-color: #000;
+}
+
+.pricing .price {
+    margin: 0;
+}
+
+.pricing .price > li::before {
+    content: "\f046";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.pricing .price > li {
+    border-top: 1px dotted #ddd;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+}
+
+.pricing .price > li:last-child {
+    border-bottom: 1px dotted #ddd;
+}
+
+.pricing .premium {
+    background-color: #521535;
+    color: #fff;
+}
+
+@media screen and (max-width: 479px) {
+    .price-wrap {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pricing .pricing-wrap h3 {
+        font-size: 24px;
+    }
+}
